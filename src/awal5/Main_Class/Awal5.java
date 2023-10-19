@@ -32,16 +32,16 @@ public class Awal5 {
         NumberFormat formater = NumberFormat.getCurrencyInstance(Indonesia);
 
         //Komputer class
-        Komputer cm1 = new Komputer("Acer", "Nitro 16", "AMD RYZEN™ 5 7535HS", "NVIDIA® GeForce RTX™ 4050", 8, 16000000, 'G', true);
-        Komputer cm2 = new Komputer("Asus", "X441BA", "AMD A6", "AMD Radeon Graphics™", 4, 3500000, 'O', false);
-        Komputer cm3 = new Komputer("MSI", "BRAVO 15 ", "AMD Ryzen™ 5 5600H", "AMD Radeon RX 5500M", 8, 13000000, 'G', true);
-        Komputer cm4 = new Komputer("Lenovo", "Think Pad T10", "Intel® Core™ i5 m250", "Intel®  HD Graphic", 4, 3000000, 'O', false);
-        Komputer cm5 = new Komputer("Lenovo", "Legion 5 Gen 7", "AMD Ryzen™ 7 6800H", "NVIDIA® GeForce RTX™ 3070 Ti", 16, 36000000, 'G', true);
-        Komputer cm6 = new Komputer("MSI", "Creator Z16 HX Studio - B13VETO", "Intel® Core™ i7 - 13700HX", "NVIDIA® GeForce RTX™ 4060", 16, 49000000, 'C', true);
-        Komputer cm7 = new Komputer("Asus", "ExpertBook B5 Flip", "Intel® Core™ i5 1240P ", "Intel® Iren Xe graphic™", 8, 1600000, 'O', true);
-        Komputer cm8 = new Komputer("Asus", "X441MA", "Intel® Celeron N450", "Intel®  UHD Graphic", 4, 4000000, 'O', false);
-        Komputer cm9 = new Komputer("Acer", "Aspire 1", "Qualcomm Kyro 468", "Qualcomm Adreno 618", 4, 600000, 'O', true);
-        Komputer cm10 = new Komputer("Acer", "ConceptD 7 SpatialLabs Edition", "Intel® Core™ i7 -11800H", "NVIDIA® GeForce RTX™ 3050", 4, 57000000, 'C', true);
+        final Komputer cm1 = new Komputer("Acer", "Nitro 16", "AMD RYZEN™ 5 7535HS", "NVIDIA® GeForce RTX™ 4050", 8, 16000000, 'G', true);
+        final Komputer cm2 = new Komputer("Asus", "X441BA", "AMD A6", "AMD Radeon Graphics™", 4, 3500000, 'O', false);
+        final Komputer cm3 = new Komputer("MSI", "BRAVO 15 ", "AMD Ryzen™ 5 5600H", "AMD Radeon RX 5500M", 8, 13000000, 'G', true);
+        final Komputer cm4 = new Komputer("Lenovo", "Think Pad T10", "Intel® Core™ i5 m250", "Intel®  HD Graphic", 4, 3000000, 'O', false);
+        final Komputer cm5 = new Komputer("Lenovo", "Legion 5 Gen 7", "AMD Ryzen™ 7 6800H", "NVIDIA® GeForce RTX™ 3070 Ti", 16, 36000000, 'G', true);
+        final Komputer cm6 = new Komputer("MSI", "Creator Z16 HX Studio - B13VETO", "Intel® Core™ i7 - 13700HX", "NVIDIA® GeForce RTX™ 4060", 16, 49000000, 'C', true);
+        final Komputer cm7 = new Komputer("Asus", "ExpertBook B5 Flip", "Intel® Core™ i5 1240P ", "Intel® Iren Xe graphic™", 8, 1600000, 'O', true);
+        final Komputer cm8 = new Komputer("Asus", "X441MA", "Intel® Celeron N450", "Intel®  UHD Graphic", 4, 4000000, 'O', false);
+        final Komputer cm9 = new Komputer("Acer", "Aspire 1", "Qualcomm Kyro 468", "Qualcomm Adreno 618", 4, 600000, 'O', true);
+        final Komputer cm10 = new Komputer("Acer", "ConceptD 7 SpatialLabs Edition", "Intel® Core™ i7 -11800H", "NVIDIA® GeForce RTX™ 3050", 4, 57000000, 'C', true);
 
         System.out.println("======================= AWAL 5 Program =======================");
         System.out.println("  ===================== Komputer 1 ==========================");
@@ -61,7 +61,7 @@ public class Awal5 {
 
         if (cm1.isSSD() == true) {
             System.out.println("  SSD :" + " " + "Yes");
-        } else if (cm1.isSSD() == false) {
+        } else {
             System.out.println("  HDD :" + " " + "Yes");
         }
         System.out.println("  ===================== Komputer 2 ==========================");
@@ -81,7 +81,7 @@ public class Awal5 {
 
         if (cm2.isSSD() == true) {
             System.out.println("  SSD :" + "Yes");
-        } else if (cm2.isSSD() == false) {
+        } else{
             System.out.println("  HDD :" + "Yes");
         }
         System.out.println("  ===================== Komputer 3 ==========================");
@@ -101,7 +101,7 @@ public class Awal5 {
 
         if (cm3.isSSD() == true) {
             System.out.println("  SSD :" + " " + "Yes");
-        } else if (cm3.isSSD() == false) {
+        } else{
             System.out.println("  HDD :" + " " + "Yes");
         }
         System.out.println("  ===================== Komputer 4 ==========================");
@@ -141,7 +141,7 @@ public class Awal5 {
 
         if (cm5.isSSD() == true) {
             System.out.println("  SSD :" + " " + "Yes");
-        } else if (cm5.isSSD() == false) {
+        } else{
             System.out.println("  HDD :" + " " + "Yes");
         }
         System.out.println("  ===================== Komputer 6 ==========================");
@@ -161,7 +161,7 @@ public class Awal5 {
 
         if (cm6.isSSD() == true) {
             System.out.println("  SSD :" + " " + "Yes");
-        } else if (cm2.isSSD() == false) {
+        } else {
             System.out.println("  HDD :" + "  " + "Yes");
         }
         System.out.println("  ===================== Komputer 7 ==========================");
@@ -181,7 +181,7 @@ public class Awal5 {
 
         if (cm7.isSSD() == true) {
             System.out.println("  SSD :" + " " + "Yes");
-        } else if (cm7.isSSD() == false) {
+        } else {
             System.out.println("  HDD :" + "  " + "Yes");
         }
         System.out.println("  ===================== Komputer 8 ==========================");
@@ -201,7 +201,7 @@ public class Awal5 {
 
         if (cm8.isSSD() == true) {
             System.out.println("  SSD :" + " " + "Yes");
-        } else if (cm8.isSSD() == false) {
+        } else {
             System.out.println("  HDD :" + "  " + "Yes");
         }
         System.out.println("  ===================== Komputer 9 ==========================");
@@ -221,7 +221,7 @@ public class Awal5 {
 
         if (cm9.isSSD() == true) {
             System.out.println("  SSD :" + " " + "Yes");
-        } else if (cm9.isSSD() == false) {
+        } else {
             System.out.println("  HDD :" + "  " + "Yes");
         }
         System.out.println("  ===================== Komputer 10 ==========================");
@@ -241,7 +241,7 @@ public class Awal5 {
 
         if (cm10.isSSD() == true) {
             System.out.println("  SSD :" + " " + "Yes");
-        } else if (cm10.isSSD() == false) {
+        } else {
             System.out.println("  HDD :" + "  " + "Yes");
         }
         System.out.println("============================== END =============================");
