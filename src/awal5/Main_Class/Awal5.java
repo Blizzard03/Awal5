@@ -14,12 +14,13 @@ import java.util.Locale;
  */
 public class Awal5 {
 
-    //private static boolean SSD;
+    // private static boolean SSD;
 
-    /*Series Legendary
-    * G = Gaming
-    * O = Office
-    * C = Content Creator
+    /*
+     * Series Legendary
+     * G = Gaming
+     * O = Office
+     * C = Content Creator
      */
     /**
      * @param args the command line arguments
@@ -27,24 +28,208 @@ public class Awal5 {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        //Curency Formatter
-        Locale Indonesia = new Locale("in", "ID");
+        // Curency Formatter
+        Locale Indonesia = new Locale(
+                "in",
+                "ID");
         NumberFormat formater = NumberFormat.getCurrencyInstance(Indonesia);
 
-        //Komputer class
-        final Komputer cm1 = new Komputer("Acer", "Nitro 16", "AMD RYZEN™ 5 7535HS", "NVIDIA® GeForce RTX™ 4050", 8, 16000000, 'G', true);
-        final Komputer cm2 = new Komputer("Asus", "X441BA", "AMD A6", "AMD Radeon Graphics™", 4, 3500000, 'O', false);
-        final Komputer cm3 = new Komputer("MSI", "BRAVO 15 ", "AMD Ryzen™ 5 5600H", "AMD Radeon RX 5500M", 8, 13000000, 'G', true);
-        final Komputer cm4 = new Komputer("Lenovo", "Think Pad T10", "Intel® Core™ i5 m250", "Intel®  HD Graphic", 4, 3000000, 'O', false);
-        final Komputer cm5 = new Komputer("Lenovo", "Legion 5 Gen 7", "AMD Ryzen™ 7 6800H", "NVIDIA® GeForce RTX™ 3070 Ti", 16, 36000000, 'G', true);
-        final Komputer cm6 = new Komputer("MSI", "Creator Z16 HX Studio - B13VETO", "Intel® Core™ i7 - 13700HX", "NVIDIA® GeForce RTX™ 4060", 16, 49000000, 'C', true);
-        final Komputer cm7 = new Komputer("Asus", "ExpertBook B5 Flip", "Intel® Core™ i5 1240P ", "Intel® Iren Xe graphic™", 8, 1600000, 'O', true);
-        final Komputer cm8 = new Komputer("Asus", "X441MA", "Intel® Celeron N450", "Intel®  UHD Graphic", 4, 4000000, 'O', false);
-        final Komputer cm9 = new Komputer("Acer", "Aspire 1", "Qualcomm Kyro 468", "Qualcomm Adreno 618", 4, 600000, 'O', true);
-        final Komputer cm10 = new Komputer("Acer", "ConceptD 7 SpatialLabs Edition", "Intel® Core™ i7 -11800H", "NVIDIA® GeForce RTX™ 3050", 4, 57000000, 'C', true);
+        // Komputer class - Edition Full Constructors
+        final Komputer cm1 = new Komputer(
+                "Acer",
+                "Nitro 16",
+                "AMD RYZEN™ 5 7535HS",
+                "NVIDIA® GeForce RTX™ 4050",
+                8,
+                16000000.00,
+                'G',
+                true);
+        final Komputer cm2 = new Komputer(
+                "Asus",
+                "X441BA",
+                "AMD A6",
+                "AMD Radeon Graphics™",
+                4,
+                3500000.00,
+                'O',
+                false);
+        final Komputer cm3 = new Komputer(
+                "MSI",
+                "BRAVO 15 ",
+                "AMD Ryzen™ 5 5600H",
+                "AMD Radeon RX 5500M",
+                8,
+                13000000.00,
+                'G',
+                true);
+        final Komputer cm4 = new Komputer(
+                "Lenovo",
+                "Think Pad T10",
+                "Intel® Core™ i5 m250",
+                "Intel®  HD Graphic",
+                4,
+                3000000.00,
+                'O',
+                false);
+        final Komputer cm5 = new Komputer(
+                "Lenovo",
+                "Legion 5 Gen 7",
+                "AMD Ryzen™ 7 6800H",
+                "NVIDIA® GeForce RTX™ 3070 Ti",
+                16,
+                36000000.00,
+                'G', true);
+        final Komputer cm6 = new Komputer(
+                "MSI",
+                "Creator Z16 HX Studio - B13VETO",
+                "Intel® Core™ i7 - 13700HX",
+                "NVIDIA® GeForce RTX™ 4060",
+                16,
+                49000000,
+                'C',
+                true);
+        final Komputer cm7 = new Komputer(
+                "Asus",
+                "ExpertBook B5 Flip",
+                "Intel® Core™ i5 1240P ",
+                "Intel® Iren Xe graphic™",
+                8, 1600000,
+                'O',
+                true);
+        final Komputer cm8 = new Komputer(
+                "Asus",
+                "X441MA",
+                "Intel® Celeron N450",
+                "Intel®  UHD Graphic",
+                4,
+                4000000,
+                'O',
+                false);
+        final Komputer cm9 = new Komputer(
+                "Acer",
+                "Aspire 1",
+                "Qualcomm Kyro 468",
+                "Qualcomm Adreno 618",
+                4,
+                600000,
+                'O',
+                true);
+        final Komputer cm10 = new Komputer(
+                "Acer",
+                "ConceptD 7 SpatialLabs Edition",
+                "Intel® Core™ i7 -11800H",
+                "NVIDIA® GeForce RTX™ 3050",
+                8,
+                57000000,
+                'C',
+                true);
+
+        // Komputer 2 - Blank Constructor
+        final Komputer cm11 = new Komputer();
+        cm11.Brand = "";
+        cm11.Model = "";
+        cm11.CPU = "";
+        cm11.GPU = "";
+        cm11.RAM_Capacity = 0;
+        cm11.Price = 0.00;
+        cm11.Series = '-';
+
+        final Komputer cm12 = new Komputer();
+        cm12.Brand = "";
+        cm12.Model = "";
+        cm12.CPU = "";
+        cm12.GPU = "";
+        cm12.RAM_Capacity = 0;
+        cm12.Price = 0.00;
+        cm12.Series = '-';
+
+        final Komputer cm13 = new Komputer();
+        cm13.Brand = "";
+        cm13.Model = "";
+        cm13.CPU = "";
+        cm13.GPU = "";
+        cm13.RAM_Capacity = 0;
+        cm13.Price = 0.00;
+        cm13.Series = '-';
+
+        final Komputer cm14 = new Komputer();
+        cm14.Brand = "";
+        cm14.Model = "";
+        cm14.CPU = "";
+        cm14.GPU = "";
+        cm14.RAM_Capacity = 0;
+        cm14.Price = 0.00;
+        cm14.Series = '-';
+
+        final Komputer cm15 = new Komputer();
+        cm15.Brand = "";
+        cm15.Model = "";
+        cm15.CPU = "";
+        cm15.GPU = "";
+        cm15.RAM_Capacity = 0;
+        cm15.Price = 0.00;
+        cm15.Series = '-';
+
+        final Komputer cm16 = new Komputer();
+        cm16.Brand = "";
+        cm16.Model = "";
+        cm16.CPU = "";
+        cm16.GPU = "";
+        cm16.RAM_Capacity = 0;
+        cm16.Price = 0.00;
+        cm16.Series = '-';
+
+        final Komputer cm17 = new Komputer();
+        cm17.Brand = "";
+        cm17.Model = "";
+        cm17.CPU = "";
+        cm17.GPU = "";
+        cm17.RAM_Capacity = 0;
+        cm17.Price = 0.00;
+        cm17.Series = '-';
+
+        final Komputer cm18 = new Komputer();
+        cm18.Brand = "";
+        cm18.Model = "";
+        cm18.CPU = "";
+        cm18.GPU = "";
+        cm18.RAM_Capacity = 0;
+        cm18.Price = 0.00;
+        cm18.Series = '-';
+
+        final Komputer cm19 = new Komputer();
+        cm19.Brand = "";
+        cm19.Model = "";
+        cm19.CPU = "";
+        cm19.GPU = "";
+        cm19.RAM_Capacity = 0;
+        cm19.Price = 0.00;
+        cm19.Series = '-';
+
+        final Komputer cm20 = new Komputer();
+        cm20.Brand = "";
+        cm20.Model = "";
+        cm20.CPU = "";
+        cm20.GPU = "";
+        cm20.RAM_Capacity = 0;
+        cm20.Price = 0.00;
+        cm20.Series = '-';
+
+        // Komputer 3 - Brand, Model, and Price only
+        final Komputer cm21 = new Komputer("", "", 0.0);
+        final Komputer cm22 = new Komputer("", "", 0.0);
+        final Komputer cm23 = new Komputer("", "", 0.0);
+        final Komputer cm24 = new Komputer("", "", 0.0);
+        final Komputer cm25 = new Komputer("", "", 0.0);
+        final Komputer cm26 = new Komputer("", "", 0.0);
+        final Komputer cm27 = new Komputer("", "", 0.0);
+        final Komputer cm28 = new Komputer("", "", 0.0);
+        final Komputer cm29 = new Komputer("", "", 0.0);
+        final Komputer cm30 = new Komputer("", "", 0.0);
 
         System.out.println("======================= AWAL 5 Program =======================");
-        System.out.println("  ===================== Komputer 1 ==========================");
+        System.out.println("================= Komputer Full Constractor===================");
+        System.out.println("======================= Komputer 1 ===========================");
         System.out.println("  Brand :  " + cm1.getBrand());
         System.out.println("  Model :  " + cm1.getModel());
         System.out.println("  CPU :  " + cm1.getCPU());
@@ -81,7 +266,7 @@ public class Awal5 {
 
         if (cm2.isSSD() == true) {
             System.out.println("  SSD :" + "Yes");
-        } else{
+        } else {
             System.out.println("  HDD :" + "Yes");
         }
         System.out.println("  ===================== Komputer 3 ==========================");
@@ -101,7 +286,7 @@ public class Awal5 {
 
         if (cm3.isSSD() == true) {
             System.out.println("  SSD :" + " " + "Yes");
-        } else{
+        } else {
             System.out.println("  HDD :" + " " + "Yes");
         }
         System.out.println("  ===================== Komputer 4 ==========================");
@@ -141,7 +326,7 @@ public class Awal5 {
 
         if (cm5.isSSD() == true) {
             System.out.println("  SSD :" + " " + "Yes");
-        } else{
+        } else {
             System.out.println("  HDD :" + " " + "Yes");
         }
         System.out.println("  ===================== Komputer 6 ==========================");
@@ -244,6 +429,229 @@ public class Awal5 {
         } else {
             System.out.println("  HDD :" + "  " + "Yes");
         }
+        System.out.println("\n ================= Komputer Blank Constructors===================");
+        System.out.println("  ===================== Komputer 11 ==========================");
+        System.out.println("  Brand :  " + cm11.getBrand());
+        System.out.println("  Model :  " + cm11.getModel());
+        System.out.println("  CPU :  " + cm11.getCPU());
+        System.out.println("  GPU :  " + cm11.getGPU());
+        System.out.println("  RAM :  " + String.valueOf(cm11.getRAM_Capacity()) + " " + "GB");
+        System.out.println("  Price :  " + formater.format(cm11.getPrice()));
+        if (cm11.getSeries() == 'G') {
+            System.out.println("  Series :  " + "Gaming");
+        } else if (cm11.getSeries() == 'O') {
+            System.out.println("  Series :  " + "Office");
+        } else if (cm11.getSeries() == 'C') {
+            System.out.println("  Series :  " + "Content Creator");
+        }
+
+        if (cm11.isSSD() == true) {
+            System.out.println("  SSD :" + " " + "Yes");
+        } else {
+            System.out.println("  HDD :" + "  " + "Yes");
+        }
+        System.out.println("  ===================== Komputer 12 ==========================");
+        System.out.println("  Brand :  " + cm12.getBrand());
+        System.out.println("  Model :  " + cm12.getModel());
+        System.out.println("  CPU :  " + cm12.getCPU());
+        System.out.println("  GPU :  " + cm12.getGPU());
+        System.out.println("  RAM :  " + String.valueOf(cm12.getRAM_Capacity()) + " " + "GB");
+        System.out.println("  Price :  " + formater.format(cm12.getPrice()));
+        if (cm12.getSeries() == 'G') {
+            System.out.println("  Series :  " + "Gaming");
+        } else if (cm12.getSeries() == 'O') {
+            System.out.println("  Series :  " + "Office");
+        } else if (cm12.getSeries() == 'C') {
+            System.out.println("  Series :  " + "Content Creator");
+        }
+
+        if (cm12.isSSD() == true) {
+            System.out.println("  SSD :" + " " + "Yes");
+        } else {
+            System.out.println("  HDD :" + "  " + "Yes");
+        }
+        System.out.println("  ===================== Komputer 13 ==========================");
+        System.out.println("  Brand :  " + cm13.getBrand());
+        System.out.println("  Model :  " + cm13.getModel());
+        System.out.println("  CPU :  " + cm13.getCPU());
+        System.out.println("  GPU :  " + cm13.getGPU());
+        System.out.println("  RAM :  " + String.valueOf(cm13.getRAM_Capacity()) + " " + "GB");
+        System.out.println("  Price :  " + formater.format(cm13.getPrice()));
+        if (cm13.getSeries() == 'G') {
+            System.out.println("  Series :  " + "Gaming");
+        } else if (cm13.getSeries() == 'O') {
+            System.out.println("  Series :  " + "Office");
+        } else if (cm13.getSeries() == 'C') {
+            System.out.println("  Series :  " + "Content Creator");
+        }
+
+        if (cm13.isSSD() == true) {
+            System.out.println("  SSD :" + " " + "Yes");
+        } else {
+            System.out.println("  HDD :" + "  " + "Yes");
+        }
+        System.out.println("  ===================== Komputer 14 ==========================");
+        System.out.println("  Brand :  " + cm14.getBrand());
+        System.out.println("  Model :  " + cm14.getModel());
+        System.out.println("  CPU :  " + cm14.getCPU());
+        System.out.println("  GPU :  " + cm14.getGPU());
+        System.out.println("  RAM :  " + String.valueOf(cm14.getRAM_Capacity()) + " " + "GB");
+        System.out.println("  Price :  " + formater.format(cm14.getPrice()));
+        if (cm14.getSeries() == 'G') {
+            System.out.println("  Series :  " + "Gaming");
+        } else if (cm14.getSeries() == 'O') {
+            System.out.println("  Series :  " + "Office");
+        } else if (cm14.getSeries() == 'C') {
+            System.out.println("  Series :  " + "Content Creator");
+        }
+
+        if (cm14.isSSD() == true) {
+            System.out.println("  SSD :" + " " + "Yes");
+        } else {
+            System.out.println("  HDD :" + "  " + "Yes");
+        }
+        System.out.println("  ===================== Komputer 15 ==========================");
+        System.out.println("  Brand :  " + cm15.getBrand());
+        System.out.println("  Model :  " + cm15.getModel());
+        System.out.println("  CPU :  " + cm15.getCPU());
+        System.out.println("  GPU :  " + cm15.getGPU());
+        System.out.println("  RAM :  " + String.valueOf(cm15.getRAM_Capacity()) + " " + "GB");
+        System.out.println("  Price :  " + formater.format(cm15.getPrice()));
+        if (cm15.getSeries() == 'G') {
+            System.out.println("  Series :  " + "Gaming");
+        } else if (cm15.getSeries() == 'O') {
+            System.out.println("  Series :  " + "Office");
+        } else if (cm15.getSeries() == 'C') {
+            System.out.println("  Series :  " + "Content Creator");
+        }
+
+        if (cm16.isSSD() == true) {
+            System.out.println("  SSD :" + " " + "Yes");
+        } else {
+            System.out.println("  HDD :" + "  " + "Yes");
+        }
+        System.out.println("  ===================== Komputer 17 ==========================");
+        System.out.println("  Brand :  " + cm17.getBrand());
+        System.out.println("  Model :  " + cm17.getModel());
+        System.out.println("  CPU :  " + cm17.getCPU());
+        System.out.println("  GPU :  " + cm17.getGPU());
+        System.out.println("  RAM :  " + String.valueOf(cm17.getRAM_Capacity()) + " " + "GB");
+        System.out.println("  Price :  " + formater.format(cm17.getPrice()));
+        if (cm17.getSeries() == 'G') {
+            System.out.println("  Series :  " + "Gaming");
+        } else if (cm17.getSeries() == 'O') {
+            System.out.println("  Series :  " + "Office");
+        } else if (cm17.getSeries() == 'C') {
+            System.out.println("  Series :  " + "Content Creator");
+        }
+
+        if (cm17.isSSD() == true) {
+            System.out.println("  SSD :" + " " + "Yes");
+        } else {
+            System.out.println("  HDD :" + "  " + "Yes");
+        }
+        System.out.println("  ===================== Komputer 18 ==========================");
+        System.out.println("  Brand :  " + cm18.getBrand());
+        System.out.println("  Model :  " + cm18.getModel());
+        System.out.println("  CPU :  " + cm18.getCPU());
+        System.out.println("  GPU :  " + cm18.getGPU());
+        System.out.println("  RAM :  " + String.valueOf(cm18.getRAM_Capacity()) + " " + "GB");
+        System.out.println("  Price :  " + formater.format(cm18.getPrice()));
+        if (cm18.getSeries() == 'G') {
+            System.out.println("  Series :  " + "Gaming");
+        } else if (cm18.getSeries() == 'O') {
+            System.out.println("  Series :  " + "Office");
+        } else if (cm18.getSeries() == 'C') {
+            System.out.println("  Series :  " + "Content Creator");
+        }
+
+        if (cm18.isSSD() == true) {
+            System.out.println("  SSD :" + " " + "Yes");
+        } else {
+            System.out.println("  HDD :" + "  " + "Yes");
+        }
+        System.out.println("  ===================== Komputer 19 ==========================");
+        System.out.println("  Brand :  " + cm19.getBrand());
+        System.out.println("  Model :  " + cm19.getModel());
+        System.out.println("  CPU :  " + cm19.getCPU());
+        System.out.println("  GPU :  " + cm19.getGPU());
+        System.out.println("  RAM :  " + String.valueOf(cm19.getRAM_Capacity()) + " " + "GB");
+        System.out.println("  Price :  " + formater.format(cm19.getPrice()));
+        if (cm19.getSeries() == 'G') {
+            System.out.println("  Series :  " + "Gaming");
+        } else if (cm19.getSeries() == 'O') {
+            System.out.println("  Series :  " + "Office");
+        } else if (cm19.getSeries() == 'C') {
+            System.out.println("  Series :  " + "Content Creator");
+        }
+
+        if (cm10.isSSD() == true) {
+            System.out.println("  SSD :" + " " + "Yes");
+        } else {
+            System.out.println("  HDD :" + "  " + "Yes");
+        }
+        System.out.println("  ===================== Komputer 20 ==========================");
+        System.out.println("  Brand :  " + cm20.getBrand());
+        System.out.println("  Model :  " + cm20.getModel());
+        System.out.println("  CPU :  " + cm20.getCPU());
+        System.out.println("  GPU :  " + cm20.getGPU());
+        System.out.println("  RAM :  " + String.valueOf(cm20.getRAM_Capacity()) + " " + "GB");
+        System.out.println("  Price :  " + formater.format(cm20.getPrice()));
+        if (cm20.getSeries() == 'G') {
+            System.out.println("  Series :  " + "Gaming");
+        } else if (cm20.getSeries() == 'O') {
+            System.out.println("  Series :  " + "Office");
+        } else if (cm20.getSeries() == 'C') {
+            System.out.println("  Series :  " + "Content Creator");
+        }
+
+        if (cm20.isSSD() == true) {
+            System.out.println("  SSD :" + " " + "Yes");
+        } else {
+            System.out.println("  HDD :" + "  " + "Yes");
+        }
+        System.out.println("\n==============================================================");
+        System.out.println("========= Komputer 3 - Brand, Model, and Price only ============");
+        System.out.println("===================== Komputer 21 ==========================");
+        System.out.println("  Brand :  " + cm21.getBrand());
+        System.out.println("  Model :  " + cm21.getModel());
+        System.out.println("  Price :  " + formater.format(cm21.getPrice()));
+        System.out.println("===================== Komputer 22 ==========================");
+        System.out.println("  Brand :  " + cm22.getBrand());
+        System.out.println("  Model :  " + cm22.getModel());
+        System.out.println("  Price :  " + formater.format(cm22.getPrice()));
+        System.out.println("===================== Komputer 23 ==========================");
+        System.out.println("  Brand :  " + cm23.getBrand());
+        System.out.println("  Model :  " + cm23.getModel());
+        System.out.println("  Price :  " + formater.format(cm23.getPrice()));
+        System.out.println("===================== Komputer 24 ==========================");
+        System.out.println("  Brand :  " + cm24.getBrand());
+        System.out.println("  Model :  " + cm24.getModel());
+        System.out.println("  Price :  " + formater.format(cm24.getPrice()));
+        System.out.println("===================== Komputer 25 ==========================");
+        System.out.println("  Brand :  " + cm25.getBrand());
+        System.out.println("  Model :  " + cm25.getModel());
+        System.out.println("  Price :  " + formater.format(cm25.getPrice()));
+        System.out.println("===================== Komputer 26 ==========================");
+        System.out.println("  Brand :  " + cm26.getBrand());
+        System.out.println("  Model :  " + cm26.getModel());
+        System.out.println("  Price :  " + formater.format(cm26.getPrice()));
+        System.out.println("===================== Komputer 27 ==========================");
+        System.out.println("  Brand :  " + cm27.getBrand());
+        System.out.println("  Model :  " + cm27.getModel());
+        System.out.println("  Price :  " + formater.format(cm27.getPrice()));
+        System.out.println("===================== Komputer 28 ==========================");
+        System.out.println("  Brand :  " + cm28.getBrand());
+        System.out.println("  Model :  " + cm28.getModel());
+        System.out.println("  Price :  " + formater.format(cm28.getPrice()));
+        System.out.println("===================== Komputer 29 ==========================");
+        System.out.println("  Brand :  " + cm29.getBrand());
+        System.out.println("  Model :  " + cm29.getModel());
+        System.out.println("  Price :  " + formater.format(cm29.getPrice()));
+        System.out.println("===================== Komputer 30 ==========================");
+        System.out.println("  Brand :  " + cm30.getBrand());
+        System.out.println("  Model :  " + cm30.getModel());
+        System.out.println("  Price :  " + formater.format(cm30.getPrice()));
         System.out.println("============================== END =============================");
         System.out.println("Made by WPA TEAM");
     }

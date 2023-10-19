@@ -10,15 +10,24 @@ package awal5.Komputer_Class;
  */
 public class Komputer {
 
-    //Initiate Variable
-    private String Brand, Model, CPU, GPU;
-    private int RAM_Capacity;
-    private double Price;
-    private char Series;
-    private boolean SSD;
+    // Initiate Variable
+    public String Brand, Model, CPU, GPU;
+    public int RAM_Capacity;
+    public double Price;
+    public char Series;
+    public boolean SSD;
 
-    //Constructors
-    public Komputer(String Brand, String Model, String CPU, String GPU, int RAM_Capacity, double Price, char Series, boolean SSD) {
+    // Full Constructors
+    public Komputer(
+            String Brand,
+            String Model,
+            String CPU,
+            String GPU,
+            int RAM_Capacity,
+            double Price,
+            char Series,
+            boolean SSD) {
+
         this.Brand = Brand;
         this.Model = Model;
         this.CPU = CPU;
@@ -28,11 +37,30 @@ public class Komputer {
         this.Series = Series;
         this.SSD = SSD;
     }
-    
+
+    // Blank Constuctors
+    public Komputer() {
+        this.Brand = "Uknowns";
+        this.Model = "Uknowns";
+        this.CPU = "Unknows";
+        this.GPU = "Unknows";
+        this.RAM_Capacity = 0;
+        this.Price = 0.0;
+        this.Series = '-';
+        this.SSD = true;
+    }
+
+    // Brand, Model, and Price only
+    public Komputer(String Brand, String Model, Double Price) {
+        this.Brand = Brand;
+        this.Model = Model;
+        this.Price = Price;
+
+    }
 
     /*
-    * Getter Variables
-    */
+     * Getters Variables
+     */
     public String getBrand() {
         return Brand;
     }
@@ -63,6 +91,41 @@ public class Komputer {
 
     public boolean isSSD() {
         return SSD;
+    }
+
+    /*
+     * Setters Variables
+     */
+    public void setBrand(String brand) {
+        Brand = brand;
+    }
+
+    public void setModel(String model) {
+        Model = model;
+    }
+
+    public void setCPU(String cPU) {
+        CPU = cPU;
+    }
+
+    public void setGPU(String gPU) {
+        GPU = gPU;
+    }
+
+    public void setRAM_Capacity(int rAM_Capacity) {
+        RAM_Capacity = rAM_Capacity;
+    }
+
+    public void setPrice(double price) {
+        Price = price;
+    }
+
+    public void setSeries(char series) {
+        Series = series;
+    }
+
+    public void setSSD(boolean sSD) {
+        SSD = sSD;
     }
 
 }
