@@ -4,9 +4,9 @@
  */
 package awal5.Main_Class;
 
-import awal5.Komputer_Class.Komputer;
-import awal5.Komputer_Class.Komputer_Desktop;
-import awal5.Komputer_Class.KomputerLaptop;
+import awal5.Komputer_Class.Master.Komputer;
+import awal5.Komputer_Class.Master.Sub.Komputer_Desktop;
+import awal5.Komputer_Class.Master.Sub.KomputerLaptop;
 import java.text.NumberFormat;
 import java.util.Locale;
 
