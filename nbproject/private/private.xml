@@ -4,7 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/mariq/OneDrive/Dokumen/NetBeansProjects/Awal5/src/awal5/Main_Class/Awal5.java</file>
-            <file>file:/C:/Users/mariq/OneDrive/Dokumen/NetBeansProjects/Awal5/src/awal5/Komputer_Class/Komputer.java</file>
+            <file>file:/C:/Users/mariq/OneDrive/Dokumen/NetBeansProjects/Awal5/src/awal5/Komputer_Class/Master/Sub/KomputerLaptop.java</file>
+            <file>file:/C:/Users/mariq/OneDrive/Dokumen/NetBeansProjects/Awal5/src/awal5/Komputer_Class/Master/Komputer.java</file>
+            <file>file:/C:/Users/mariq/OneDrive/Dokumen/NetBeansProjects/Awal5/src/awal5/Komputer_Class/Master/Sub/Komputer_Desktop.java</file>
         </group>
     </open-files>
 </project-private>
