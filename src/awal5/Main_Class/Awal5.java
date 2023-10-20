@@ -230,8 +230,8 @@ public class Awal5 {
         final Komputer cm30 = new Komputer("", "", 0.0);
 
         // Komputer 4
-        final Komputer_Desktop PC = new Komputer_Desktop(0, " ", " ", "", "", "", 0, 0.0, '-', false);
-        final KomputerLaptop Laptop = new KomputerLaptop("", "", "", "", "", "", 0, 0.0, '-', false);
+        final Komputer_Desktop PC = new Komputer_Desktop(0, 0, "", "", "", "", "", "", 0, 0, '-', true);
+        final KomputerLaptop Laptop = new KomputerLaptop("", "", false, false, "", "", "", "", 0, 0.0, '-', false);
 
         System.out.println("======================= AWAL 5 Program =======================");
         System.out.println("================= Komputer Full Constractor===================");
@@ -663,40 +663,38 @@ public class Awal5 {
         System.out.println("\n ===================== Komputer 32 ==========================");
         Laptop.tampilkan();
         int[] min_v = {
-                (int) cm1.getPrice(),
-                (int) cm2.getPrice(),
-                (int) cm3.getPrice(),
-                (int) cm4.getPrice(),
-                (int) cm5.getPrice(),
-                (int) cm6.getPrice(),
-                (int) cm7.getPrice(),
-                (int) cm8.getPrice(),
-                (int) cm9.getPrice(),
-                (int) cm10.getPrice(),
-                (int) cm11.getPrice(),
-                (int) cm12.getPrice(),
-                (int) cm13.getPrice(),
-                (int) cm14.getPrice(),
-                (int) cm15.getPrice(),
-                (int) cm16.getPrice(),
-                (int) cm17.getPrice(),
-                (int) cm18.getPrice(),
-                (int) cm19.getPrice(),
-                (int) cm20.getPrice(),
-                (int) cm21.getPrice(),
-                (int) cm22.getPrice(),
-                (int) cm23.getPrice(),
-                (int) cm24.getPrice(),
-                (int) cm25.getPrice(),
-                (int) cm26.getPrice(),
-                (int) cm27.getPrice(),
-                (int) cm28.getPrice(),
-                (int) cm29.getPrice(),
-                (int) cm30.getPrice(),
-                (int) PC.getPrice(),
-                (int) Laptop.getPrice(),
-
-        };
+            (int) cm1.getPrice(),
+            (int) cm2.getPrice(),
+            (int) cm3.getPrice(),
+            (int) cm4.getPrice(),
+            (int) cm5.getPrice(),
+            (int) cm6.getPrice(),
+            (int) cm7.getPrice(),
+            (int) cm8.getPrice(),
+            (int) cm9.getPrice(),
+            (int) cm10.getPrice(),
+            (int) cm11.getPrice(),
+            (int) cm12.getPrice(),
+            (int) cm13.getPrice(),
+            (int) cm14.getPrice(),
+            (int) cm15.getPrice(),
+            (int) cm16.getPrice(),
+            (int) cm17.getPrice(),
+            (int) cm18.getPrice(),
+            (int) cm19.getPrice(),
+            (int) cm20.getPrice(),
+            (int) cm21.getPrice(),
+            (int) cm22.getPrice(),
+            (int) cm23.getPrice(),
+            (int) cm24.getPrice(),
+            (int) cm25.getPrice(),
+            (int) cm26.getPrice(),
+            (int) cm27.getPrice(),
+            (int) cm28.getPrice(),
+            (int) cm29.getPrice(),
+            (int) cm30.getPrice(),
+            (int) PC.getPrice(),
+            (int) Laptop.getPrice(),};
         int min = min_v[0];
         for (int i = 0; i < min_v.length; i++) {
             if (min_v[i] < min) {

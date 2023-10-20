@@ -12,15 +12,19 @@ import awal5.Komputer_Class.Master.Komputer;
  */
 public class KomputerLaptop extends Komputer {
 
-    private String wifi, LAN;
+    private final String wifi;
+    private final String LAN;
+    private final boolean touchscreen;
+    private final boolean keyboard_backlit;
 
-    public KomputerLaptop(String wifi, String LAN, String Brand, String Model, String CPU, String GPU, int RAM_Capacity,
-            double Price, char Series, boolean SSD) {
+    public KomputerLaptop(String wifi, String LAN, boolean touchscreen, boolean keyboard_backlit, String Brand, String Model, String CPU, String GPU, int RAM_Capacity, double Price, char Series, boolean SSD) {
         super(Brand, Model, CPU, GPU, RAM_Capacity, Price, Series, SSD);
         this.wifi = wifi;
         this.LAN = LAN;
+        this.touchscreen = touchscreen;
+        this.keyboard_backlit = keyboard_backlit;
     }
-
+    
     public String getWifi() {
         return wifi;
     }
@@ -29,12 +33,21 @@ public class KomputerLaptop extends Komputer {
         return LAN;
     }
 
+    public boolean isTouchscreen() {
+        return touchscreen;
+    }
+
+    public boolean isKeyboard_backlit() {
+        return keyboard_backlit;
+    }
+    
+
     @Override
     public void tampilkan() {
         // Generated from
         // nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
         System.out.println("Laptop:");
-        System.out.printf("%s %s %s %s %d %f %s %b %s%s",
+        System.out.printf("%s %s %s %s %d %f %s %b %s%s %b %b",
                 getBrand(),
                 getModel(),
                 getCPU(),
@@ -44,7 +57,10 @@ public class KomputerLaptop extends Komputer {
                 getSeries(),
                 isSSD(),
                 wifi,
-                LAN);
+                LAN,
+                touchscreen,
+                keyboard_backlit
+        );
 
     }
 }
