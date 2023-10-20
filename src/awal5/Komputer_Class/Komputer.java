@@ -16,6 +16,18 @@ public class Komputer {
     public double Price;
     public char Series;
     public boolean SSD;
+    public static int min_price = 0;
+
+    public static int getMin_price() {
+        return min_price;
+        
+    } public void tampilkan(){
+        System.out.print(Brand);
+    }
+
+    public static int min_cal(int min) {
+        return min;
+    }
 
     // Full Constructors
     public Komputer(
@@ -128,4 +140,5 @@ public class Komputer {
         SSD = sSD;
     }
 
+    
 }
